@@ -12,14 +12,10 @@ public class MainWindow : Window, IDisposable
     private Plugin Plugin;
 
     public MainWindow(Plugin plugin, IDalamudTextureWrap sheepImage) : base(
-        "Wake Up", ImGuiWindowFlags.NoScrollbar | ImGuiWindowFlags.NoScrollWithMouse)
+        "Wake Up", ImGuiWindowFlags.NoScrollbar | ImGuiWindowFlags.NoScrollWithMouse | ImGuiWindowFlags.NoResize)
     {
-        this.SizeConstraints = new WindowSizeConstraints
-        {
-            MinimumSize = new Vector2(375, 330),
-            MaximumSize = new Vector2(float.MaxValue, float.MaxValue)
-        };
 
+        this.Size = new Vector2(650, 360);
         this.SheepImage = sheepImage;
         this.Plugin = plugin;
     }
@@ -31,17 +27,20 @@ public class MainWindow : Window, IDisposable
 
     public override void Draw()
     {
-        ImGui.Text($"The random config bool is {this.Plugin.Configuration.SomePropertyToBeSavedAndWithADefault}");
-
-        if (ImGui.Button("Show Settings"))
-        {
+        if (ImGui.Button("Show Settings")) {
             this.Plugin.DrawConfigUI();
         }
 
+        ImGui.Text("Type @@ to send British William's beautiful voice to all of your friends, reminding them to tab into their games.");
+
+
         ImGui.Spacing();
 
+        ImGui.Indent(190);
+        ImGui.Image(this.SheepImage.ImGuiHandle, new Vector2(this.SheepImage.Width/2, this.SheepImage.Height/2));
+
         ImGui.Indent(55);
-        ImGui.Image(this.SheepImage.ImGuiHandle, new Vector2(this.SheepImage.Width, this.SheepImage.Height));
-        ImGui.Unindent(55);
+        ImGui.Text("made with <3 by sheep");
+        ImGui.Unindent(190);
     }
 }

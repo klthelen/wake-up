@@ -36,7 +36,7 @@ namespace WakeUp
             chatGui = _chatGui;
 
             this.Configuration = this.PluginInterface.GetPluginConfig() as Configuration ?? new Configuration();
-            this.Configuration.Initialize(this.PluginInterface);
+            this.Configuration.Initialize(this.PluginInterface, log);
 
             // you might normally want to embed resources and load them from the manifest stream
             imagePath = Path.Combine(PluginInterface.AssemblyLocation.Directory?.FullName!, "sheep.png");
@@ -62,7 +62,7 @@ namespace WakeUp
         }
 
         public void HandleMessage(Dalamud.Game.Text.XivChatType type, uint senderId, ref Dalamud.Game.Text.SeStringHandling.SeString sender, ref Dalamud.Game.Text.SeStringHandling.SeString message, ref bool isHandled) {
-           if (((int)type < 57) || (((int)type > 100) && ((int)type < 108))) {
+            if (this.Configuration.messagePassesFilter(type)) {
                 this.log.Debug("[{0}][{1}]: {2}", type, sender, message.TextValue);
 
                 if (message.TextValue == "@@") {
