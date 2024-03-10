@@ -1,0 +1,23 @@
+[
+	{
+		"Author": "sheep",
+		"Name": "Wake Up!",
+		"InternalName": "WakeUp",
+        "Punchline": "Tab in, Ethan, roulette time.",
+		"Description": "The perfect way to get the attention of your single-monitor friends.",
+		"AssemblyVersion": "0.0.1",
+		"TestingAssemblyVersion": "0.0.1",
+		"RepoUrl": "https://github.com/klthelen/wake-up",
+		"ApplicableVersion": "any",
+		"DalamudApiLevel": 9,
+		"Tags": [
+            "sheep",
+            "sound",
+            "sfx"
+		],
+		"IconUrl": "https://github.com/klthelen/wake-up/raw/main/icon.png",
+		"DownloadLinkInstall": "https://github.com/klthelen/wake-up/releases/download/v0.0.1/latest.zip",
+		"DownloadLinkTesting": "https://github.com/klthelen/wake-up/releases/download/v0.0.1/latest.zip",
+		"DownloadLinkUpdate": "https://github.com/klthelen/wake-up/releases/download/v0.0.1/latest.zip"
+	}
+]
