@@ -5,8 +5,8 @@
 		"InternalName": "WakeUp",
         "Punchline": "Tab in, Ethan, roulette time.",
 		"Description": "The perfect way to get the attention of your single-monitor friends.",
-		"AssemblyVersion": "0.0.1",
-		"TestingAssemblyVersion": "0.0.1",
+		"AssemblyVersion": "0.0.2",
+		"TestingAssemblyVersion": "0.0.2",
 		"RepoUrl": "https://github.com/klthelen/wake-up",
 		"ApplicableVersion": "any",
 		"DalamudApiLevel": 9,
@@ -16,8 +16,8 @@
             "sfx"
 		],
 		"IconUrl": "https://github.com/klthelen/wake-up/raw/main/icon.png",
-		"DownloadLinkInstall": "https://github.com/klthelen/wake-up/releases/download/v0.0.1/latest.zip",
-		"DownloadLinkTesting": "https://github.com/klthelen/wake-up/releases/download/v0.0.1/latest.zip",
-		"DownloadLinkUpdate": "https://github.com/klthelen/wake-up/releases/download/v0.0.1/latest.zip"
+		"DownloadLinkInstall": "https://github.com/klthelen/wake-up/releases/download/v0.0.2/latest.zip",
+		"DownloadLinkTesting": "https://github.com/klthelen/wake-up/releases/download/v0.0.2/latest.zip",
+		"DownloadLinkUpdate": "https://github.com/klthelen/wake-up/releases/download/v0.0.2/latest.zip"
 	}
 ]

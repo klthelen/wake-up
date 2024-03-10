@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Authors>sheep</Authors>
     <Company>titan egi fanclub</Company>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <Description>The perfect way to get the attention of your single-monitor friends.</Description>
     <Copyright></Copyright>
     <PackageProjectUrl>https://github.com/klthelen/wake-up</PackageProjectUrl>
