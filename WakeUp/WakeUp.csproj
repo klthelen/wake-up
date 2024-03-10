@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="Dalamud.Plugin.Bootstrap.targets"/>
+
+  <PropertyGroup>
+    <Authors>sheep</Authors>
+    <Company>titan egi fanclub</Company>
+    <Version>0.0.0.1</Version>
+    <Description>The perfect way to get the attention of your single-monitor friends.</Description>
+    <Copyright></Copyright>
+    <PackageProjectUrl>https://github.com/klthelen/wake-up</PackageProjectUrl>
+    <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="..\Data\sheep.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Visible>false</Visible>
+    </Content>
+    <Content Include="..\Data\wakeup.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Visible>false</Visible>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NAudio.Core" Version="2.1.0" />
+    <PackageReference Include="NAudio.Wasapi" Version="2.1.0" />	
+  </ItemGroup>
+</Project>
